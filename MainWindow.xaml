@@ -1,0 +1,20 @@
+﻿<Window x:Class="SudokuSolver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudokuSolver"
+        mc:Ignorable="d"
+        Title="Sudoku Solver" Height="400" Width="600">
+    <Grid x:Name="mainGrid">
+        <TextBlock HorizontalAlignment="Center" Margin="0,-220,0,0" Text="Sudoku Solver" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" TextAlignment="Center" FontSize="16"/>
+        <Button x:Name="erase" Content="Erase" HorizontalAlignment="Center" Margin="0,220,0,0" VerticalAlignment="Center" Width="50" Height="20" Focusable="False"/>
+        <Button x:Name="even" Content="Even" HorizontalAlignment="Center" Margin="120,220,0,0" VerticalAlignment="Center" Width="30" Height="20" Focusable="False"/>
+        <Button x:Name="odd" Content="Odd" HorizontalAlignment="Center" Margin="-120,220,0,0" VerticalAlignment="Center" Width="30" Height="20" Focusable="False"/>
+        <TextBlock HorizontalAlignment="Center" Margin="300,-100,0,0" Text="Restrict:" TextWrapping="Wrap" VerticalAlignment="Center" Width="50" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Margin="-300,-100,0,0" Text="Digits:" TextWrapping="Wrap" VerticalAlignment="Center" Width="50" TextAlignment="Center"/>
+        <CheckBox x:Name="ctrl_diagonals" Content="Diagonals" HorizontalAlignment="Center" Margin="325,-50,0,0" VerticalAlignment="Center" Width="100"/>
+        <CheckBox x:Name="ctrl_king" Content="King's move" HorizontalAlignment="Center" Margin="325,0,0,0" VerticalAlignment="Center" Width="100"/>
+        <CheckBox x:Name="ctrl_knight" Content="Knight's move" HorizontalAlignment="Center" Margin="325,50,0,0" VerticalAlignment="Center" Width="100"/>
+    </Grid>
+</Window>
